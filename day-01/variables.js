@@ -21,6 +21,9 @@ var myObject = {
   name: 'My Lovely Object'
 };
 
+// Here is the array
+var myArray = ['Mehedi', 'Likhon'];
+
 // Here you can put function in a variable
 var myFunction = function() {
   return `this is a cute function!`;
