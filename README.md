@@ -7,4 +7,4 @@
 
 ## Schedule
 
-The next class will be held on 02 February 2020 03:00 PM, Sunday at Lab-3
+The next class will be held on 04 February 2020 03:00 PM, Sunday at Lab-3
