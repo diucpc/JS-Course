@@ -1,4 +1,4 @@
-let scores, activePlayer, roundScore, gamePlaying;
+let scores, activePlayer, roundScore, gamePlaying, dice;
 
 // GAME STARTS
 init();
@@ -7,21 +7,19 @@ init();
 document.querySelector('.btn-new').addEventListener('click', init);
 
 // ROLL BUTTON
-document.querySelector('.btn-roll').addEventListener('click', function() {
+document.querySelector('.btn-roll').addEventListener('click', function () {
   if (gamePlaying) {
     // random dice
-    let dice = Math.floor(Math.random() * 6 + 1);
+    dice = Math.floor(Math.random() * 6 + 1);
     let diceDOM = document.querySelector('.dice');
     diceDOM.style.display = 'block';
     diceDOM.src = `./img/dice-${dice}.png`;
   }
 
   // update score
-  if (dice != 1) {
+  if (dice !== 1) {
     roundScore = roundScore + dice;
-    document.querySelector(
-      `#current-score-${activePlayer}`
-    ).textContent = roundScore;
+    document.querySelector(`#current-score-${activePlayer}`).textContent = roundScore;
   } else {
     nextPlayer();
   }
