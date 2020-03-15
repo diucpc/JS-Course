@@ -48,3 +48,5 @@ function init() {
 
   document.querySelector('.player-0-panel').classList.add('active');
 }
+
+// Done!
